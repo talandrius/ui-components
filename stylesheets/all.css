@@ -9746,6 +9746,36 @@ button.close {
 .bg-facebook {
   background: #3b5998; }
 
+/* line 2, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
+.readme section {
+  background-color: #FAFAFA;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 1px 1px 3px #F0F0F0;
+  position: relative;
+  padding-bottom: 80px; }
+/* line 11, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
+.readme .download {
+  position: absolute;
+  right: 20px;
+  bottom: 20px; }
+/* line 19, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
+.readme h1.readme-header, .readme h2.readme-header, .readme h3.readme-header {
+  color: #7D7979;
+  font-weight: bold;
+  line-height: 25px;
+  margin: 10px 0;
+  text-transform: uppercase; }
+/* line 26, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
+.readme h1.readme-header {
+  font-size: 17px; }
+/* line 29, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
+.readme h2.readme-header {
+  font-size: 15px; }
+/* line 32, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
+.readme h3.readme-header {
+  font-size: 13px; }
+
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_avatars.scss */
 .avatar {
   width: 30px;
@@ -9874,11 +9904,7 @@ button.close {
     position: absolute;
     right: 10px;
     top: 10px; }
-    /* line 45, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_card.scss */
-    .card-user .avatar {
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-      border: white 1px solid; }
-  /* line 50, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_card.scss */
+  /* line 46, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_card.scss */
   .card-link {
     position: absolute;
     top: 0;
@@ -9887,7 +9913,7 @@ button.close {
     z-index: 2;
     background: black;
     opacity: 0; }
-    /* line 58, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_card.scss */
+    /* line 54, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_card.scss */
     .card-link:hover {
       opacity: 0.1; }
 
@@ -9932,14 +9958,15 @@ button.close {
       text-align: center; }
   /* line 20, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post-upvote {
+    text-align: center;
     transition: all 0.15s ease; }
-    /* line 22, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    /* line 23, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post-upvote-count {
       font-size: 13px;
       line-height: 20px;
       margin: 2px 0 0;
       font-weight: bold; }
-    /* line 28, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    /* line 29, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post-upvote-arrow {
       transition: all 0.15s ease;
       width: 0;
@@ -9950,37 +9977,37 @@ button.close {
       border-bottom: 9px solid black;
       border-radius: 2px;
       margin: auto; }
-    /* line 39, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    /* line 40, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post-upvote:hover {
       color: #5898f1;
       cursor: pointer; }
-      /* line 42, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+      /* line 43, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
       .post-upvote:hover .post-upvote-arrow {
         border-bottom: 9px solid #5898f1; }
-  /* line 48, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 49, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post-body h3 {
     font-weight: bold;
     font-size: 23px; }
-  /* line 52, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 53, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post-body p {
     font-weight: 500;
     color: #999999; }
-  /* line 57, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 58, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post-control {
     color: transparent;
     font-size: 15px;
     transition: all 0.15s ease; }
-    /* line 61, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    /* line 62, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post-control:hover {
       color: #D23333 !important; }
-  /* line 65, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 66, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post:hover {
     background: #f7f7fa;
     cursor: pointer; }
-    /* line 68, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    /* line 69, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post:hover .post-upvote {
       transform: scale(1.2); }
-    /* line 71, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    /* line 72, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post:hover .post-control {
       color: #E6E6E6; }
 
@@ -9999,29 +10026,6 @@ button.close {
     /* line 11, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
     .share-links-item:hover {
       color: white; }
-
-/* line 2, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
-.readme section {
-  background-color: #FAFAFA;
-  padding: 20px;
-  margin: 20px 0;
-  box-shadow: 1px 1px 3px #F0F0F0; }
-/* line 11, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
-.readme h1, .readme h2, .readme h3 {
-  color: #7D7979;
-  font-weight: bold;
-  line-height: 25px;
-  margin: 10px 0;
-  text-transform: uppercase; }
-/* line 18, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
-.readme h1 {
-  font-size: 17px; }
-/* line 21, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
-.readme h2 {
-  font-size: 15px; }
-/* line 24, /Users/boris/code/lewagon/ui-components/source/stylesheets/pages/_home.css.scss */
-.readme h3 {
-  font-size: 13px; }
 
 /*
 ==============================================

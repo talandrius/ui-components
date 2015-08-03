@@ -29,25 +29,31 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
 
-      <section>
+      <section class="readme-section">
         <h2 class="readme-header">Avatar</h2>
-        <pre class="highlight html"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"user.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"avatar"</span><span class="nt">&gt;</span>
+        <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar"/>
+<img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-large"/>
+<img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
+
+<pre class="highlight html"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"user.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"avatar"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"user.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"avatar avatar-large"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"user.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"avatar avatar-bordered"</span><span class="nt">&gt;</span>
 </code></pre>
 
-<img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar"/>
-<img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-large"/>
-<img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
 
         <div class="download">
-          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_avatars.scss">Download .SCSS file</a>
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_avatars.scss">View .SCSS file</a>
         </div>
       </section>
 
-      <section>
+      <section class="readme-section">
         <h2 class="readme-header">Badge</h2>
         <h3 class="readme-header">User badge</h3>
+
+<div class="user-badge-container">
+   <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg" alt="" class="avatar">
+   <div class="user-badge user-badge-red">M</div>
+</div>
 
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-badge-container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"user.jpg"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"avatar"</span><span class="nt">&gt;</span>
@@ -55,12 +61,13 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
-<div class="user-badge-container">
-   <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg" alt="" class="avatar">
-   <div class="user-badge user-badge-red">M</div>
-</div>
 
         <h3 class="readme-header">Icon badge</h3>
+
+<div class="icon-badge-container">
+  <i class="fa fa-envelope-o"></i>
+  <div class="icon-badge icon-badge-blue">3</div>
+</div>
 
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-badge-container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
@@ -68,19 +75,24 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
-<div class="icon-badge-container">
-  <i class="fa fa-envelope-o"></i>
-  <div class="icon-badge icon-badge-blue">3</div>
-</div>
 
         <div class="download">
-          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_badges.scss">Download .SCSS file</a>
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_badges.scss">View .SCSS file</a>
         </div>
       </section>
 
-      <section>
+      <section class="readme-section">
         <h2 class="readme-header">Banner</h2>
-        <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner text-center"</span><span class="nt">&gt;</span>
+        <div class="banner text-center" style="background-image: url('https://unsplash.it/1000/500?image=0')">
+  <div class="banner-shadow"></div>
+  <div class="banner-content">
+    <h1>Some Stuff</h1>
+    <p>Very cool stuff, useful and smart</p>
+    <a class="btn btn-primary btn-lg">GET IT</a>
+  </div>
+</div>
+
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner text-center"</span> <span class="na">style=</span><span class="s">"background-image: url('product.jpg')"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner-shadow"</span><span class="nt">&gt;&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner-content"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h1&gt;</span>Some Stuff<span class="nt">&lt;/h1&gt;</span>
@@ -90,24 +102,32 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
-<div class="banner text-center">
-  <div class="banner-shadow"></div>
-  <div class="banner-content">
-    <h1>Some Stuff</h1>
-    <p>Very cool stuff, useful and smart</p>
-    <a class="btn btn-primary btn-lg">GET IT</a>
-  </div>
-</div>
 
         <div class="download">
-          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_banner.scss">Download .SCSS file</a>
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_banner.scss">View .SCSS file</a>
         </div>
       </section>
 
-      <section>
+      <section class="readme-section">
         <h2 class="readme-header">card</h2>
-        <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-bg"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <h3 class="readme-header">With inline background</h3>
+
+<div class="card">
+  <span class="card-bg" style="background-image:url('https://unsplash.it/600/300?image=3')"></span>
+  <span class="card-shadow"></span>
+  <span class="card-description">Popular</span>
+  <span class="card-text">
+    <h2>Some stuff</h2>
+    <p>Very cool stuff, useful and smart</p>
+  </span>
+  <span class="card-user">
+    <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
+  </span>
+  <a href="#" class="card-link"></a>
+</div>
+
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-bg"</span> <span class="na">style=</span><span class="s">"background-image: url('product.jpg')"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-shadow"</span><span class="nt">&gt;&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Popular<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
@@ -120,6 +140,8 @@
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
+
+<h3 class="readme-header">Without inline background</h3>
 
 <div class="card">
   <span class="card-bg"></span>
@@ -135,7 +157,72 @@
   <a href="#" class="card-link"></a>
 </div>
 
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-bg"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-shadow"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-description"</span><span class="nt">&gt;</span>Popular<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Some stuff<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Very cool stuff, useful and smart<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-user"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'user.jpg'</span> <span class="na">class=</span><span class="s">"avatar avatar-bordered"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+
 <h3 class="readme-header">Combined with the grid</h3>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <span class="card-bg" style="background-image: url('https://unsplash.it/600/300?image=0')"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </span>
+        <span class="card-user">
+          <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
+        </span>
+        <a href="#" class="card-link"></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <span class="card-bg" style="background-image: url('https://unsplash.it/600/300?image=1')"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </span>
+        <span class="card-user">
+          <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
+        </span>
+        <a href="#" class="card-link"></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card">
+        <span class="card-bg" style="background-image: url('https://unsplash.it/600/300?image=2')"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </span>
+        <span class="card-user">
+          <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
+        </span>
+        <a href="#" class="card-link"></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -152,84 +239,15 @@
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs-12 col-sm-4">
-      <div class="card">
-        <span class="card-bg"></span>
-        <span class="card-shadow"></span>
-        <span class="card-description">Popular</span>
-        <span class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
-        </span>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card">
-        <span class="card-bg"></span>
-        <span class="card-shadow"></span>
-        <span class="card-description">Popular</span>
-        <span class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
-        </span>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card">
-        <span class="card-bg"></span>
-        <span class="card-shadow"></span>
-        <span class="card-description">Popular</span>
-        <span class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar avatar-bordered"/>
-        </span>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-  </div>
-</div>
 
         <div class="download">
-          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_card.scss">Download .SCSS file</a>
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_card.scss">View .SCSS file</a>
         </div>
       </section>
 
-      <section>
+      <section class="readme-section">
         <h2 class="readme-header">List item</h2>
-        <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-upvote'</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-upvote-arrow"</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-upvote-count'</span><span class="nt">&gt;</span>95<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-body'</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;h3&gt;</span>Kudoz<span class="nt">&lt;/h3&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Les meilleures offres d'emploi cadre sur mobile<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-controls'</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-bars post-controls-item post-control"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-star post-controls-item post-control"</span><span class="nt">&gt;&lt;/i&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-controls-item"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-badge-container "</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'user.jpg'</span> <span class="na">class=</span><span class="s">"avatar"</span><span class="nt">/&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-badge user-badge-black user-badge-bordered"</span><span class="nt">&gt;</span>M<span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre>
+        <h3 class="readme-header">Visible controls</h3>
 
 <div class="post">
   <div class='post-upvote'>
@@ -241,9 +259,45 @@
     <p>Les meilleures offres d'emploi cadre sur mobile</p>
   </div>
   <div class='post-controls'>
-    <i class="fa fa-bars post-controls-item post-control"></i>
-    <i class="fa fa-star post-controls-item post-control"></i>
-    <div class="post-controls-item text-center">
+    <i class="fa fa-bars post-control"></i>
+    <i class="fa fa-star post-control"></i>
+    <i class="fa fa-heart post-control"></i>
+  </div>
+</div>
+
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-upvote'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-upvote-arrow"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-upvote-count'</span><span class="nt">&gt;</span>95<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-body'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>Kudoz<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Les meilleures offres d'emploi cadre sur mobile<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-controls'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-bars post-control"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-star post-control"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-heart post-control"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+
+
+<h3 class="readme-header">Hidden controls</h3>
+
+<div class="post">
+  <div class='post-upvote'>
+    <div class="post-upvote-arrow"></div>
+    <div class='post-upvote-count'>95</div>
+  </div>
+  <div class='post-body'>
+    <h3>Kudoz</h3>
+    <p>Les meilleures offres d'emploi cadre sur mobile</p>
+  </div>
+  <div class='post-controls'>
+    <i class="fa fa-bars post-control post-control-hidden"></i>
+    <i class="fa fa-star post-control post-control-hidden"></i>
+    <div class="post-control">
       <div class="user-badge-container ">
         <img src='https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg' class="avatar"/>
         <div class="user-badge user-badge-black user-badge-bordered">M</div>
@@ -252,45 +306,34 @@
   </div>
 </div>
 
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-upvote'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-body'</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">'post-controls'</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-bars post-control post-control-hidden"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-star post-control post-control-hidden"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"post-control"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-badge-container "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">'user.jpg'</span> <span class="na">class=</span><span class="s">"avatar"</span><span class="nt">/&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"user-badge user-badge-black user-badge-bordered"</span><span class="nt">&gt;</span>M<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+
+
         <div class="download">
-          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_post_item.scss">Download .SCSS file</a>
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_post_item.scss">View .SCSS file</a>
         </div>
       </section>
 
-
-      <section>
+      <section class="readme-section">
         <h2 class="readme-header">Navbar</h2>
         <nav class="navbar-wagon">
   <div class="container-fluid navbar-wagon-container">
 
-<a class="navbar-wagon-logo" href="/">      <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px"
-	 viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
-<g>
-	<path fill="#D23333" d="M138.9,302.5c-20.9,0-37.8,16.9-37.8,37.8s16.9,37.8,37.8,37.8s37.8-16.9,37.8-37.8
-		C176.7,319.4,159.8,302.5,138.9,302.5z M138.9,360.6c-11.3,0-20.6-9.3-20.6-20.6c0-11.3,9.3-20.6,20.6-20.6
-		c11.3,0,20.6,9.3,20.6,20.6C159.5,351.6,150.5,360.6,138.9,360.6z"/>
-	<circle fill="#D23333" cx="138.9" cy="340.3" r="3.6"/>
-	<path fill="#D23333" d="M358.1,302.5c-20.9,0-37.8,16.9-37.8,37.8s16.9,37.8,37.8,37.8s37.8-16.9,37.8-37.8
-		C395.9,319.4,379,302.5,358.1,302.5z M358.1,360.6c-11.3,0-20.6-9.3-20.6-20.6c0-11.3,9.3-20.6,20.6-20.6
-		c11.3,0,20.6,9.3,20.6,20.6C378.7,351.6,369.4,360.6,358.1,360.6z"/>
-	<circle fill="#D23333" cx="358.1" cy="340.3" r="3.6"/>
-	<path fill="#D23333" d="M93.5,340.3c0-25.2,20.2-45.4,45.4-45.4s45.4,20.2,45.4,45.4h128.4c0-25.2,20.2-45.4,45.4-45.4
-		s45.4,20.2,45.4,45.4l47.1-1c0,0,7-2.3,7-15.9c0-13.6-9.3-14.9-9.3-14.9l-21.9-0.3c0,0-0.7-13.9-20.9-34.2
-		c-19.9-20.6-43.8-17.2-43.8-17.2l-312.1,1.3v61.7h0.7c0,0-5.3-2.7-5.6,9.9C44.4,342,50,340,50,340L93.5,340.3z"/>
-	<rect x="186.3" y="316.8" fill="#D23333" width="127" height="2.7"/>
-	<rect x="54" y="316.8" fill="#D23333" width="40.5" height="2.7"/>
-	<path fill="#D23333" d="M451,245.2h-4l-1.7-21.6c0,0-13.3-42.1-42.5-72.3c-0.7-0.7,6.6,0,6-0.7c-30.5-30.5-119.1-24.9-157.5-26.2
-		s-181.8,8.6-196,21.6c-6.3,5.6-5.3,13.9-5.3,13.9v86.6h319.1c0,0,17.9-2.7,43.1,17.6c18.9,15.3,23.5,38.5,23.5,38.5H447l-0.3-34.2
-		l5,0.3C456.6,261.1,454.6,247.8,451,245.2z M154.5,224.6c0,1.7-1.3,3-3,3H88.2c-1.7,0-3-1.3-3-3v-62.7c0-1.7,1.3-3,3-3h63.3
-		c1.7,0,3,1.3,3,3V224.6z M240.7,224.6c0,1.7-1.3,3-3,3h-63.3c-1.7,0-3-1.3-3-3v-62.7c0-1.7,1.3-3,3-3h63.3c1.7,0,3,1.3,3,3V224.6z
-		 M326.9,224.6c0,1.7-1.3,3-3,3h-63.3c-1.7,0-3-1.3-3-3v-62.7c0-1.7,1.3-3,3-3H324c1.7,0,3,1.3,3,3V224.6z M421.1,227.9h-77.9
-		c-3.3,0-6-2.7-6-6v-57.4c0-3.3,2.7-6,6-6h36.5c22.2,0,47.1,43.8,47.1,55.1C426.8,224.6,424.1,227.9,421.1,227.9z"/>
-</g>
-</svg>
-
+<a href="/">      <img class="navbar-wagon-logo" src="images/lewagon.png" />
 </a>
     <form action="" class="navbar-wagon-search">
       <input type="text" class="navbar-wagon-search-input" placeholder="Search for featured stuff">
@@ -299,12 +342,9 @@
       </button>
     </form>
 
-    <div class="navbar-wagon-item">
-      <a href="" class="navbar-wagon-button btn btn-default">Post stuff</a>
-    </div>
 
+    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
     <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
-
     <a href="" class="navbar-wagon-item navbar-wagon-link hidden-xs">
       <div class="icon-badge-container">
         <i class="fa fa-envelope-o"></i>
@@ -315,9 +355,9 @@
     <div class="navbar-wagon-item">
       <div class="dropdown">
 
-        <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg" alt="" class="navbar-wagon-avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
 
-        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu" aria-labelledby="navbar-wagon-menu">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
           <li><a href="#">Profile</a></li>
           <li><a href="#">Dashboard</a></li>
           <li><a href="#">Log Out</a></li>
@@ -329,13 +369,171 @@
   </div>
 </nav>
 
+<pre class="highlight html"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar-wagon"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid navbar-wagon-container"</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo.png"</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-search"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-input"</span> <span class="na">placeholder=</span><span class="s">"Search for featured stuff"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-button btn"</span><span class="nt">&gt;</span>Post stuff<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link hidden-xs"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-badge-container"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-badge icon-badge-blue"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"user.jpg"</span> <span class="na">class=</span><span class="s">"avatar dropdown-toggle"</span> <span class="na">id=</span><span class="s">"navbar-wagon-menu"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dashboard<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Log Out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre>
+
+
         <div class="download">
-          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_navbar.scss">Download .SCSS file</a>
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_navbar.scss">View .SCSS file</a>
         </div>
       </section>
 
+      <section class="readme-section">
+        <h2 class="readme-header">Share Links</h2>
+        <div class="share-links">
+  <a href="#" class="share-links-item bg-facebook">
+    <i class="fa fa-facebook"></i>
+  </a>
+  <a href="#" class="share-links-item bg-twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+  <a href="#" class="share-links-item bg-email">
+    <i class="fa fa-envelope-o"></i>
+  </a>
+  <a href="#" class="share-links-item bg-text">
+    <i class="fa fa-mobile"></i>
+  </a>
+</div>
+
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"share-links"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-links-item bg-facebook"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-facebook"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-links-item bg-twitter"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-twitter"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-links-item bg-email"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-links-item bg-text"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-mobile"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
 
 
+        <div class="download">
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_share_links.scss">View .SCSS file</a>
+        </div>
+      </section>
+
+      <section class="readme-section">
+        <h2 class="readme-header">Media Layout</h2>
+        <div class="media">
+  <div class="media-body">
+    <section class="media-section">
+      <h2 class="section-heading">Pictures</h2>
+      <img src="https://unsplash.it/500/200?image=0" alt="">
+    </section>
+    <section class="media-section">
+      <h2 class="section-heading">Description</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cumque, ipsa consequatur quia explicabo, deserunt quibusdam eveniet, quo laudantium ipsam odio sapiente excepturi voluptas, enim doloremque officia? Iusto, fugit assumenda!
+      </p>
+    </section>
+  </div>
+  <div class="media-aside">
+    <section class="media-section">
+      <h2 class="section-heading"><i class="fa fa-share-square-o"></i> Share</h2>
+      <div class="share-links">
+        <a href="#" class="share-links-item bg-facebook text-center">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="#" class="share-links-item bg-twitter text-center">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="#" class="share-links-item bg-email text-center">
+          <i class="fa fa-envelope-o"></i>
+        </a>
+        <a href="#" class="share-links-item bg-text text-center">
+          <i class="fa fa-mobile"></i>
+        </a>
+      </div>
+    </section class="media-section">
+    <section class="media-section">
+      <h2 class="section-heading">382 upvotes</h2>
+      <ul class="list-inline">
+       <li>
+        <div class="user-badge-container">
+           <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/charlotte_cady.jpg" alt="" class="avatar">
+           <div class="user-badge user-badge-red">M</div>
+        </div>
+       </li>
+       <li>
+         <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/bertrand_bussac.jpg" alt="" class="avatar">
+       </li>
+       <li>
+         <img src="https://raw.githubusercontent.com/lewagon/design/master/pick-it/pictures/students/willem_browne.jpg" alt="" class="avatar">
+       </li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2&gt;</span>Pictures<span class="nt">&lt;/h2&gt;</span>
+      ...
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2&gt;</span>Description<span class="nt">&lt;/h2&gt;</span>
+      ...
+    <span class="nt">&lt;/section&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-aside"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2&gt;</span>Share<span class="nt">&lt;/h2&gt;</span>
+      ...
+    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h2&gt;</span>382 upvotes<span class="nt">&lt;/h2&gt;</span>
+      ...
+    <span class="nt">&lt;/section&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre>
+
+
+        <div class="download">
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/lewagon/ui-components/master/source/stylesheets/components/_media_layout.scss">View .SCSS file</a>
+        </div>
+      </section>
 
     </div>
   </div>

@@ -9679,24 +9679,27 @@ button.close {
   right: -10px;
   font-size: 10px;
   color: white;
-  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18px;
   width: 18px;
   text-align: center;
-  border-radius: 50%;
-  background: grey; }
-  /* line 22, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 50%; }
+  /* line 25, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
   .icon-badge-red, .user-badge-red {
     background: #EE5F5B; }
-  /* line 25, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
+  /* line 28, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
   .icon-badge-green, .user-badge-green {
     background: #32B796; }
-  /* line 28, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
+  /* line 31, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
   .icon-badge-blue, .user-badge-blue {
     background: #469AE0; }
-  /* line 31, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
+  /* line 34, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
   .icon-badge-black, .user-badge-black {
     background: black; }
-  /* line 34, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
+  /* line 37, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_badges.scss */
   .icon-badge-bordered, .user-badge-bordered {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     border: white 1px solid; }
@@ -9710,12 +9713,15 @@ button.close {
   z-index: 0; }
   /* line 7, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_banner.scss */
   .banner h1 {
-    font-weight: bold; }
-  /* line 10, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_banner.scss */
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2); }
+  /* line 11, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_banner.scss */
   .banner p {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.8); }
-  /* line 14, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_banner.scss */
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 3;
+    margin-bottom: 18px; }
+  /* line 17, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_banner.scss */
   .banner-shadow {
     background-image: linear-gradient(-225deg, rgba(0, 101, 168, 0.6) 0%, rgba(0, 36, 61, 0.6) 50%);
     position: absolute;
@@ -9724,10 +9730,19 @@ button.close {
     left: 0;
     right: 0;
     z-index: 1; }
-  /* line 23, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_banner.scss */
+  /* line 26, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_banner.scss */
   .banner-content {
     position: relative;
     z-index: 2; }
+  /* line 31, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_banner.scss */
+  .banner .btn {
+    padding: 12px 30px;
+    border-radius: 3px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    font-size: 16px; }
 
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_card.scss */
 .card {
@@ -9849,25 +9864,26 @@ button.close {
   /* line 13, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
   .navbar-wagon-item {
     flex: 0 1 auto;
+    cursor: pointer;
     padding: 0 10px; }
-  /* line 17, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+  /* line 18, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
   .navbar-wagon-search {
     flex: 1 1 auto;
     display: flex;
     justify-content: flex-end;
     padding: 0 10px;
     position: relative; }
-    /* line 23, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+    /* line 24, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
     .navbar-wagon-search-btn {
       line-height: 40px;
       color: #E6E6E6;
       border: none;
       background: transparent;
       position: absolute;
-      right: 10px;
+      right: 14px;
       top: -2px;
       z-index: 1; }
-    /* line 33, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+    /* line 34, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
     .navbar-wagon-search-input {
       flex: 0 1 300px;
       transition: all 0.15s ease;
@@ -9879,19 +9895,20 @@ button.close {
       padding: 0 10px;
       font-size: 14px;
       outline: none; }
-    /* line 45, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+    /* line 46, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
     .navbar-wagon-search-input:focus {
       border: 1px solid #CCCCCC; }
-  /* line 49, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+  /* line 50, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
   .navbar-wagon-link {
     color: #616668;
     font-size: 14px; }
-    /* line 52, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+    /* line 53, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
     .navbar-wagon-link:hover {
       color: #da552f;
       text-decoration: none; }
-  /* line 57, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+  /* line 58, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
   .navbar-wagon-button {
+    margin-left: 10px;
     padding: 0 20px;
     border-radius: 20em;
     line-height: 40px;
@@ -9899,17 +9916,17 @@ button.close {
     color: white;
     font-size: 14px;
     border: 2px solid red; }
-    /* line 66, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+    /* line 68, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
     .navbar-wagon-button:hover {
       color: white;
       background: red;
       border-color: #cc0000; }
-  /* line 72, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+  /* line 74, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
   .navbar-wagon-dropdown-menu {
     margin-top: 15px;
     box-shadow: 1px 1px 4px #E6E6E6;
     border-color: #E6E6E6; }
-    /* line 76, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+    /* line 78, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
     .navbar-wagon-dropdown-menu li > a {
       transition: color 0.3s ease;
       font-weight: lighter !important;
@@ -9917,22 +9934,29 @@ button.close {
       font-size: 15px !important;
       line-height: 22px !important;
       padding: 10px 20px; }
-      /* line 83, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+      /* line 85, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
       .navbar-wagon-dropdown-menu li > a:hover {
         background: transparent !important;
         color: black !important; }
-    /* line 88, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+    /* line 90, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
     .navbar-wagon-dropdown-menu:before {
       content: ' ';
-      height: 20px;
-      width: 20px;
+      height: 10px;
+      width: 10px;
       position: absolute;
       right: 10px;
-      top: -10px;
+      top: -6px;
       background-color: white;
       transform: rotate(45deg);
       border-left: 1px solid #E6E6E6;
       border-top: 1px solid #E6E6E6; }
+  /* line 104, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.css.scss */
+  .navbar-wagon hr {
+    height: 12px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    margin-right: 10px; }
 
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .post {
@@ -9954,8 +9978,12 @@ button.close {
   .post-control {
     flex: 1 1 0;
     text-align: center;
-    color: #E6E6E6; }
-    /* line 20, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    color: #E6E6E6;
+    border-right: 1px solid rgba(0, 0, 0, 0.03); }
+    /* line 21, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    .post-control:last-child {
+      border-right: none; }
+    /* line 22, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post-control:hover {
       color: red !important; }
   /* line 24, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
@@ -9986,27 +10014,31 @@ button.close {
       /* line 47, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
       .post-upvote:hover .post-upvote-arrow {
         border-bottom: 9px solid #5898f1; }
-  /* line 53, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 51, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post-body h3 {
     font-weight: bold;
     font-size: 23px; }
-  /* line 57, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 55, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post-body p {
     font-weight: 500;
     color: #999999; }
-  /* line 62, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 60, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post-control-hidden {
     color: transparent;
     font-size: 15px;
-    transition: all 0.15s ease; }
-  /* line 67, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    transition: all 0.15s ease;
+    border-color: transparent; }
+  /* line 66, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .post:hover {
     background: #f7f7fa;
     cursor: pointer; }
+    /* line 69, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    .post:hover .post-control-hidden {
+      border-color: rgba(0, 0, 0, 0.03); }
     /* line 70, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post:hover .post-upvote {
       transform: scale(1.2); }
-    /* line 73, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+    /* line 71, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
     .post:hover .post-control-hidden {
       color: #E6E6E6; }
 

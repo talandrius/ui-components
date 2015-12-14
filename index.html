@@ -93,8 +93,7 @@
 
       <section class="readme-section">
         <h2 class="readme-header">Banner</h2>
-        <div class="banner text-center" style="background-image: url('https://unsplash.it/1000/500?image=0')">
-  <div class="banner-gradient"></div>
+        <div class="banner text-center" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://unsplash.it/1000/500?image=0');">
   <div class="banner-content">
     <h1>Some Stuff</h1>
     <p>Very cool stuff, useful and smart</p>
@@ -102,8 +101,7 @@
   </div>
 </div>
 
-<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner text-center"</span> <span class="na">style=</span><span class="s">"background-image: url('https://unsplash.it/1000/500?image=0')"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner-gradient"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner text-center"</span> <span class="na">style=</span><span class="s">"background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://unsplash.it/1000/500?image=0');"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"banner-content"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h1&gt;</span>Some Stuff<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;p&gt;</span>Very cool stuff, useful and smart<span class="nt">&lt;/p&gt;</span>
@@ -122,31 +120,27 @@
         <h2 class="readme-header">card</h2>
         <h3 class="readme-header">With HTML-inline background</h3>
 
-<div class="card">
-  <span class="card-bg" style="background-image:url('https://unsplash.it/600/300?image=3')"></span>
-  <span class="card-gradient"></span>
-  <span class="card-category">Popular</span>
-  <span class="card-text">
+<div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=0');">
+  <div class="card-category">Popular</div>
+  <div class="card-text">
     <h2>Some stuff</h2>
     <p>Very cool stuff, useful and smart</p>
-  </span>
-  <span class="card-user">
+  </div>
+  <div class="card-user">
     <img src="http://placehold.it/50x50" class="avatar avatar-bordered"/>
-  </span>
+  </div>
   <a href="#" class="card-link"></a>
 </div>
 
-<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-bg"</span> <span class="na">style=</span><span class="s">"background-image:url('https://unsplash.it/600/300?image=3')"</span><span class="nt">&gt;&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-gradient"</span><span class="nt">&gt;&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-category"</span><span class="nt">&gt;</span>Popular<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=0');"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-category"</span><span class="nt">&gt;</span>Popular<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h2&gt;</span>Some stuff<span class="nt">&lt;/h2&gt;</span>
     <span class="nt">&lt;p&gt;</span>Very cool stuff, useful and smart<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"card-user"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-user"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/50x50"</span> <span class="na">class=</span><span class="s">"avatar avatar-bordered"</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
@@ -156,49 +150,43 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs-12 col-sm-4">
-      <div class="card">
-        <span class="card-bg" style="background-image: url('https://unsplash.it/600/300?image=0')"></span>
-        <span class="card-gradient"></span>
-        <span class="card-category">Popular</span>
-        <span class="card-text">
+      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=0');">
+        <div class="card-category">Popular</div>
+        <div class="card-text">
           <h2>Some stuff</h2>
           <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='http://placehold.it/50x50' class="avatar avatar-bordered"/>
-        </span>
+        </div>
+        <div class="card-user">
+          <img src="http://placehold.it/50x50" class="avatar avatar-bordered"/>
+        </div>
         <a href="#" class="card-link"></a>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
-      <div class="card">
-        <span class="card-bg" style="background-image: url('https://unsplash.it/600/300?image=1')"></span>
-        <span class="card-gradient"></span>
-        <span class="card-category">Popular</span>
-        <span class="card-text">
+      <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=1');">
+        <div class="card-category">Popular</div>
+        <div class="card-text">
           <h2>Some stuff</h2>
           <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='http://placehold.it/50x50' class="avatar avatar-bordered"/>
-        </span>
+        </div>
+        <div class="card-user">
+          <img src="http://placehold.it/50x50" class="avatar avatar-bordered"/>
+        </div>
         <a href="#" class="card-link"></a>
       </div>
     </div>
     <div class="col-xs-12 col-sm-4">
-      <div class="card">
-        <span class="card-bg" style="background-image: url('https://unsplash.it/600/300?image=2')"></span>
-        <span class="card-gradient"></span>
-        <span class="card-category">Popular</span>
-        <span class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='http://placehold.it/50x50' class="avatar avatar-bordered"/>
-        </span>
-        <a href="#" class="card-link"></a>
-      </div>
+     <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=2');">
+       <div class="card-category">Popular</div>
+       <div class="card-text">
+         <h2>Some stuff</h2>
+         <p>Very cool stuff, useful and smart</p>
+       </div>
+       <div class="card-user">
+         <img src="http://placehold.it/50x50" class="avatar avatar-bordered"/>
+       </div>
+       <a href="#" class="card-link"></a>
+     </div>
     </div>
   </div>
 </div>

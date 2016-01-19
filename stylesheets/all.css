@@ -9843,30 +9843,32 @@ button.close {
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
 .media {
   display: flex; }
-  /* line 3, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
-  .media-section {
-    margin: 40px auto;
-    padding: 10px; }
-    /* line 6, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
-    .media-section:first-child {
-      margin-top: 0; }
-    /* line 9, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
-    .media-section:last-child {
-      margin-bottom: 0; }
-  /* line 13, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
-  .media-main {
-    flex: 1 1 auto;
-    padding: 30px; }
-    /* line 16, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
-    .media-main img {
-      width: 50%; }
+
+/* line 4, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
+.media-body {
+  flex: 1 1 auto;
+  padding: 20px; }
+  /* line 7, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
+  .media-body img {
+    width: 100%; }
+
+/* line 11, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
+.media-aside {
+  flex: 0 0 400px;
+  padding: 30px;
+  align-self: stretch;
+  background: #F8F7F7;
+  border-left: 1px solid #f0efef; }
+
+/* line 18, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
+.media-section {
+  margin: 40px auto; }
   /* line 20, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
-  .media-aside {
-    flex: 0 0 350px;
-    padding: 30px;
-    align-self: stretch;
-    background: #F8F7F7;
-    border-left: 1px solid #f0efef; }
+  .media-section:first-child {
+    margin-top: 0; }
+  /* line 23, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_media_layout.scss */
+  .media-section:last-child {
+    margin-bottom: 0; }
 
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon {
@@ -10083,52 +10085,82 @@ button.close {
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
 .share-links {
   display: flex;
-  align-items: center; }
-  /* line 4, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
-  .share-links-item {
-    flex: 1 1 0;
-    color: white;
-    font-size: 18px;
-    padding: 10px 0;
-    margin: 0 5px;
-    text-align: center;
-    border-radius: 2px;
-    cursor: pointer; }
-    /* line 13, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
-    .share-links-item:hover {
-      color: white; }
+  align-items: center;
+  justify-content: space-between; }
+
+/* line 6, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
+.share-link {
+  flex: 0 0 24%;
+  color: white;
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer; }
+  /* line 14, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
+  .share-link:hover {
+    color: white; }
+
+/* line 18, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
+.bg-text {
+  background: #4a4a4a; }
+
+/* line 21, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
+.bg-email {
+  background: #aeaeae; }
+
+/* line 24, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
+.bg-twitter {
+  background: #00a3e1; }
+
+/* line 27, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
+.bg-facebook {
+  background: #3b5998; }
 
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
 .tabs {
   background: #53443F;
-  color: white;
   display: flex;
   padding: 10px 10px 0 10px; }
 
-/* line 8, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
+/* line 6, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
+.tabs a {
+  color: white; }
+
+/* line 9, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
+.tabs a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.8; }
+
+/* line 14, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
 .tabs h3 {
-  font-size: 17px; }
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 0; }
 
-/* line 12, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
+/* line 19, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
 .tabs p {
-  opacity: 0.5; }
+  opacity: 0.5;
+  margin-bottom: 0; }
 
-/* line 16, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
-.tabs-item {
+/* line 23, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
+.tab {
   background: #756A66;
   flex: 0 0 25%;
-  text-align: center; }
-
-/* line 22, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
-.tabs-item:first-child {
-  border-radius: 10px 0 0 0; }
-
-/* line 25, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
-.tabs-item:last-child {
-  border-radius: 0 10px 0 0; }
+  text-align: center;
+  padding: 20px; }
 
 /* line 29, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
-.tabs-item.active {
+.tab:first-child {
+  border-radius: 10px 0 0 0; }
+
+/* line 32, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
+.tab:last-child {
+  border-radius: 0 10px 0 0; }
+
+/* line 35, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
+.tab.active {
   background: white;
   color: black; }
 

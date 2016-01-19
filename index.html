@@ -25,17 +25,22 @@
   </head>
 
   <body>
-    <div class="container-fluid readme">
+    <h1 class="text-center" style="font-size: 30px;margin-top: 40px;margin-bottom: 30px;">Le Wagon UI components</h2>
+
+
+<div class="container-fluid readme">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
 
       <section class="readme-section">
-        <h1 class="readme-header">Le Wagon UI components</h2>
-        <p>Before you use one of our components</p>
+
+        <h2 class="readme-header">Getting started</h2>
+        <br>
+        <p>Before you use one of our components:</p>
         <ul>
-          <li>Make sure you <strong>understand the HTML structure</strong> of this component.</li>
-          <li>Make sure you <strong>understand the associated CSS code</strong> and its "graphical logic".</li>
-          <li>Add a new .SCSS partial (e.g. <code>_avatar.scss</code>) in your stylesheets <code>components</code> folder, copy/paste our CSS code inside, and then use the HTML code wherever you want.</li>
+          <li style="margin-bottom: 10px">Make sure you <strong>understand the HTML structure</strong> of this component.</li>
+          <li style="margin-bottom: 10px">Click on the "View CSS code" button and make sure you <strong>understand the associated CSS code and its "graphical logic"</strong>.</li>
+          <li style="margin-bottom: 10px">Add a new .SCSS partial file (e.g. <code>_avatar.scss</code>) in your stylesheets <code>components</code> folder, copy/paste our CSS code inside, and then use the HTML code wherever you want.</li>
         </ul>
       </section>
 
@@ -144,18 +149,14 @@
 
       <section class="readme-section">
         <h2 class="readme-header">card</h2>
-        <h3 class="readme-header">With HTML-inline background</h3>
-
-<div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=0');">
+        <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=0');">
   <div class="card-category">Popular</div>
   <div class="card-description">
     <h2>Some stuff</h2>
     <p>Very cool stuff, useful and smart</p>
   </div>
-  <div class="card-user">
-    <img src="http://placehold.it/50x50" class="avatar"/>
-  </div>
-  <a href="#" class="card-link"></a>
+  <img class="card-user avatar" src="http://placehold.it/50x50">
+  <a class="card-link" href="#" ></a>
 </div>
 
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span> <span class="na">style=</span><span class="s">"background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://unsplash.it/600/300?image=0');"</span><span class="nt">&gt;</span>
@@ -164,10 +165,8 @@
     <span class="nt">&lt;h2&gt;</span>Some stuff<span class="nt">&lt;/h2&gt;</span>
     <span class="nt">&lt;p&gt;</span>Very cool stuff, useful and smart<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-user"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/50x50"</span> <span class="na">class=</span><span class="s">"avatar"</span><span class="nt">/&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"card-link"</span><span class="nt">&gt;&lt;/a&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-user avatar"</span> <span class="na">src=</span><span class="s">"http://placehold.it/50x50"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"card-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="nt">&gt;&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
@@ -220,13 +219,13 @@
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-4"</span><span class="nt">&gt;</span>
-      <span class="c">&lt;!-- div class="card" --&gt;</span>
+      <span class="c">&lt;!-- insert &lt;div class="card"&gt; --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-4"</span><span class="nt">&gt;</span>
-      <span class="c">&lt;!-- div class="card" --&gt;</span>
+      <span class="c">&lt;!-- insert &lt;div class="card"&gt; --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-4"</span><span class="nt">&gt;</span>
-      <span class="c">&lt;!-- div class="card" --&gt;</span>
+      <span class="c">&lt;!-- insert &lt;div class="card"&gt; --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -355,41 +354,41 @@
         <h3 class="readme-header">Tabs</h3>
 
 <div class="tabs">
-  <div class="tabs-item active">
+  <a class="tab active" href="#">
     <h3>350</h3>
     <p>Followers</p>
-  </div>
-  <div class="tabs-item">
+  </a>
+  <a class="tab" href="#">
     <h3>456</h3>
     <p>Following</p>
-  </div>
-  <div class="tabs-item">
+  </a>
+  <a class="tab" href="#">
     <h3>189</h3>
     <p>Upvoted</p>
-  </div>
-  <div class="tabs-item">
+  </a>
+  <a class="tab" href="#">
     <h3>13</h3>
     <p>Submitted</p>
-  </div>
+  </a>
 </div>
 
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-item active"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tab active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h3&gt;</span>350<span class="nt">&lt;/h3&gt;</span>
     <span class="nt">&lt;p&gt;</span>Followers<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h3&gt;</span>456<span class="nt">&lt;/h3&gt;</span>
     <span class="nt">&lt;p&gt;</span>Following<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h3&gt;</span>189<span class="nt">&lt;/h3&gt;</span>
     <span class="nt">&lt;p&gt;</span>Upvoted<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tabs-item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"tab"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;h3&gt;</span>13<span class="nt">&lt;/h3&gt;</span>
     <span class="nt">&lt;p&gt;</span>Submitted<span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
@@ -401,7 +400,12 @@
 
       <section class="readme-section">
         <h2 class="readme-header">Navbar</h2>
-        <nav class="navbar-wagon">
+        <p>Take your time to understand <strong>each part</strong> of the HTML code (logo, links, search form, separators, button).</p>
+<p>Feel free to reorganize elements or delete the elements you don't need (e.g. delete search form if you don't have a navbar form).</p>
+
+<br>
+
+<div class="navbar-wagon">
   <div class="container-fluid navbar-wagon-container">
 
 <a href="/">      <img class="navbar-wagon-logo" src="images/lewagon.png" />
@@ -441,19 +445,23 @@
     <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
 
   </div>
-</nav>
+</div>
 
-<p><strong>Notice</strong>: Add the <code>navbar-wagon-fixed</code> class to your navbar if you want it to be fixed-top</p>
+<br>
+<p><strong>Notice</strong>: change class to <code>"navbar-wagon navbar-wagon-fixed"</code> if you want a fixed-top navbar.</p>
 
-<pre class="highlight html"><code><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar-wagon"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container navbar-wagon-container"</span><span class="nt">&gt;</span>
+<pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-container container-fluid "</span><span class="nt">&gt;</span>
 
+    <span class="c">&lt;!-- Logo --&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo.png"</span> <span class="na">class=</span><span class="s">"navbar-wagon-logo"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
 
+    <span class="c">&lt;!-- Pushing navigation content on the right --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-pusher"</span><span class="nt">&gt;&lt;/div&gt;</span>
 
+    <span class="c">&lt;!-- Search form --&gt;</span>
     <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-search hidden-xs hidden-sm"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-input"</span> <span class="na">placeholder=</span><span class="s">"Search something"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-btn"</span><span class="nt">&gt;</span>
@@ -461,15 +469,25 @@
       <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/form&gt;</span>
     <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"hidden-xs hidden-sm"</span><span class="nt">&gt;</span>
+
+    <span class="c">&lt;!-- Text link --&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+
+    <span class="c">&lt;!-- Vertical separator --&gt;</span>
     <span class="nt">&lt;hr&gt;</span>
+
+    <span class="c">&lt;!-- Link with icon --&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-badge-container"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-badge icon-badge-blue"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
+
+    <span class="c">&lt;!-- Vertical separator --&gt;</span>
     <span class="nt">&lt;hr&gt;</span>
+
+    <span class="c">&lt;!-- Link with profile pic and dropdown --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-item"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/50x50"</span> <span class="na">class=</span><span class="s">"avatar dropdown-toggle"</span> <span class="na">id=</span><span class="s">"navbar-wagon-menu"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
@@ -480,10 +498,14 @@
         <span class="nt">&lt;/ul&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
+
+    <span class="c">&lt;!-- Vertical separator --&gt;</span>
     <span class="nt">&lt;hr&gt;</span>
+
+    <span class="c">&lt;!-- Link with button design(call-to-action) --&gt;</span>
     <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-button btn"</span><span class="nt">&gt;</span>Post stuff<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/nav&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 </code></pre>
 
 
@@ -495,31 +517,31 @@
       <section class="readme-section">
         <h2 class="readme-header">Share Links</h2>
         <div class="share-links">
-  <a href="#" class="share-links-item bg-facebook">
+  <a href="#" class="share-link bg-facebook">
     <i class="fa fa-facebook"></i>
   </a>
-  <a href="#" class="share-links-item bg-twitter">
+  <a href="#" class="share-link bg-twitter">
     <i class="fa fa-twitter"></i>
   </a>
-  <a href="#" class="share-links-item bg-email">
+  <a href="#" class="share-link bg-email">
     <i class="fa fa-envelope-o"></i>
   </a>
-  <a href="#" class="share-links-item bg-text">
+  <a href="#" class="share-link bg-text">
     <i class="fa fa-mobile"></i>
   </a>
 </div>
 
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"share-links"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-links-item bg-facebook"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-link bg-facebook"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-facebook"</span><span class="nt">&gt;&lt;/i&gt;</span>
   <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-links-item bg-twitter"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-link bg-twitter"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-twitter"</span><span class="nt">&gt;&lt;/i&gt;</span>
   <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-links-item bg-email"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-link bg-email"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
   <span class="nt">&lt;/a&gt;</span>
-  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-links-item bg-text"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"share-link bg-text"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-mobile"</span><span class="nt">&gt;&lt;/i&gt;</span>
   <span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
@@ -535,36 +557,36 @@
         <h2 class="readme-header">Media Layout</h2>
         <div class="media">
   <div class="media-body">
-    <section class="media-section">
+    <div class="media-section">
       <h2 class="section-heading">Pictures</h2>
       <img src="https://unsplash.it/500/200?image=0" alt="">
-    </section>
-    <section class="media-section">
+    </div>
+    <div class="media-section">
       <h2 class="section-heading">Description</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure cumque, ipsa consequatur quia explicabo, deserunt quibusdam eveniet, quo laudantium ipsam odio sapiente excepturi voluptas, enim doloremque officia? Iusto, fugit assumenda!
       </p>
-    </section>
+    </div>
   </div>
   <div class="media-aside">
-    <section class="media-section">
+    <div class="media-section">
       <h2 class="section-heading"><i class="fa fa-share-square-o"></i> Share</h2>
       <div class="share-links">
-        <a href="#" class="share-links-item bg-facebook text-center">
+        <a href="#" class="share-link bg-facebook text-center">
           <i class="fa fa-facebook"></i>
         </a>
-        <a href="#" class="share-links-item bg-twitter text-center">
+        <a href="#" class="share-link bg-twitter text-center">
           <i class="fa fa-twitter"></i>
         </a>
-        <a href="#" class="share-links-item bg-email text-center">
+        <a href="#" class="share-link bg-email text-center">
           <i class="fa fa-envelope-o"></i>
         </a>
-        <a href="#" class="share-links-item bg-text text-center">
+        <a href="#" class="share-link bg-text text-center">
           <i class="fa fa-mobile"></i>
         </a>
       </div>
-    </section class="media-section">
-    <section class="media-section">
+    </div class="media-section">
+    <div class="media-section">
       <h2 class="section-heading">382 upvotes</h2>
       <ul class="list-inline">
        <li>
@@ -577,30 +599,30 @@
          <img src="http://placehold.it/50x50" alt="" class="avatar">
        </li>
       </ul>
-    </section>
+    </div>
   </div>
 </div>
 
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;h2&gt;</span>Pictures<span class="nt">&lt;/h2&gt;</span>
       ...
-    <span class="nt">&lt;/section&gt;</span>
-    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;h2&gt;</span>Description<span class="nt">&lt;/h2&gt;</span>
       ...
-    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-aside"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;h2&gt;</span>Share<span class="nt">&lt;/h2&gt;</span>
       ...
-    <span class="nt">&lt;/section&gt;</span>
-    <span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-section"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;h2&gt;</span>382 upvotes<span class="nt">&lt;/h2&gt;</span>
       ...
-    <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>

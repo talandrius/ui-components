@@ -9774,6 +9774,7 @@ button.close {
   text-decoration: none;
   color: white; }
 
+/* Build your own button classes ! */
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_card.scss */
 .card {
   height: 175px;
@@ -9821,7 +9822,8 @@ button.close {
   .card-link:hover {
     opacity: 0.1; }
 
-/* line 3, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_headers.scss */
+/* Headings */
+/* line 4, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_headers.scss */
 .section-heading {
   color: #bbb;
   font-size: 14px;
@@ -9830,11 +9832,11 @@ button.close {
   margin: 0 0 16px;
   text-transform: uppercase; }
 
-/* line 12, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_headers.scss */
+/* line 13, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_headers.scss */
 .timeline-heading span:first-child {
   font-weight: 700;
   font-size: 17px; }
-/* line 16, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_headers.scss */
+/* line 17, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_headers.scss */
 .timeline-heading span:last-child {
   color: #bbbbbb;
   font-weight: 300;
@@ -9998,6 +10000,7 @@ button.close {
   border-radius: 3px;
   transition: all 0.15s ease; }
 
+/* Body design */
 /* line 10, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-body {
   flex: 1 1 auto; }
@@ -10012,11 +10015,13 @@ button.close {
     color: #999999;
     margin-bottom: 0; }
 
+/* Product image */
 /* line 25, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-image {
   border-radius: 10px;
   margin-right: 20px; }
 
+/* Upvote design */
 /* line 31, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-upvote {
   padding-right: 20px;
@@ -10040,45 +10045,47 @@ button.close {
     border-radius: 2px;
     margin: auto; }
 
-/* line 56, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+/* Controls design */
+/* line 55, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-controls {
   display: flex;
   align-items: center;
   text-align: center;
   margin: 0px; }
 
-/* line 62, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+/* line 61, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-controls a {
   padding: 0 20px;
   font-size: 17px;
   color: #E6E6E6; }
-  /* line 66, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 65, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .product-controls a:hover {
     color: #D23333 !important; }
 
-/* line 68, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+/* line 67, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-controls-hidden a {
   color: transparent;
   font-size: 15px;
   transition: all 0.15s ease;
   border-color: transparent; }
 
-/* line 77, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+/* Hover effects */
+/* line 75, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-upvote:hover {
   color: #5898f1;
   cursor: pointer; }
-  /* line 80, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 78, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .product-upvote:hover .product-arrow {
     border-bottom: 9px solid #5898f1; }
 
-/* line 82, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+/* line 80, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product:hover {
   background: #f7f7fa;
   cursor: pointer; }
-  /* line 85, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 83, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .product:hover .product-upvote {
     transform: scale(1.2); }
-  /* line 86, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+  /* line 84, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
   .product:hover .product-controls-hidden a {
     color: #E6E6E6; }
 
@@ -10149,7 +10156,7 @@ button.close {
   background: #756A66;
   flex: 0 0 25%;
   text-align: center;
-  padding: 20px; }
+  padding: 20px 0; }
 
 /* line 29, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_tabs.scss */
 .tab:first-child {

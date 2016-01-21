@@ -10004,16 +10004,18 @@ button.close {
 /* line 10, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-body {
   flex: 1 1 auto; }
-  /* line 12, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-  .product-body h3 {
-    font-weight: bold;
-    font-size: 23px;
-    margin-top: 0; }
-  /* line 17, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-  .product-body p {
-    font-weight: lighter;
-    color: #999999;
-    margin-bottom: 0; }
+
+/* line 13, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product-body h3 {
+  font-weight: bold;
+  font-size: 23px;
+  margin-top: 0; }
+
+/* line 18, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product-body p {
+  font-weight: lighter;
+  color: #999999;
+  margin-bottom: 0; }
 
 /* Product image */
 /* line 25, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
@@ -10030,20 +10032,22 @@ button.close {
   font-weight: bold;
   font-size: 13px;
   line-height: 20px; }
-  /* line 38, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-  .product-upvote .product-count {
-    margin: 2px 0 0; }
-  /* line 41, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-  .product-upvote .product-arrow {
-    transition: all 0.15s ease;
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid transparent;
-    border-bottom: 9px solid black;
-    border-radius: 2px;
-    margin: auto; }
+
+/* line 39, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product-count {
+  margin: 2px 0 0; }
+
+/* line 42, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product-arrow {
+  transition: all 0.15s ease;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-bottom: 9px solid black;
+  border-radius: 2px;
+  margin: auto; }
 
 /* Controls design */
 /* line 55, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
@@ -10058,11 +10062,12 @@ button.close {
   padding: 0 20px;
   font-size: 17px;
   color: #E6E6E6; }
-  /* line 65, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-  .product-controls a:hover {
-    color: #D23333 !important; }
 
-/* line 67, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+/* line 66, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product-controls a:hover {
+  color: #D3473C !important; }
+
+/* line 69, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product-controls-hidden a {
   color: transparent;
   font-size: 15px;
@@ -10070,24 +10075,27 @@ button.close {
   border-color: transparent; }
 
 /* Hover effects */
-/* line 75, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-.product-upvote:hover {
-  color: #5898f1;
-  cursor: pointer; }
-  /* line 78, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-  .product-upvote:hover .product-arrow {
-    border-bottom: 9px solid #5898f1; }
-
-/* line 80, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+/* line 77, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
 .product:hover {
   background: #f7f7fa;
   cursor: pointer; }
-  /* line 83, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-  .product:hover .product-upvote {
-    transform: scale(1.2); }
-  /* line 84, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
-  .product:hover .product-controls-hidden a {
-    color: #E6E6E6; }
+
+/* line 81, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product-upvote:hover {
+  color: #5898f1;
+  cursor: pointer; }
+
+/* line 85, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product:hover .product-upvote {
+  transform: scale(1.2); }
+
+/* line 86, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product:hover .product-controls-hidden a {
+  color: #E6E6E6; }
+
+/* line 87, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_post_item.scss */
+.product-upvote:hover .product-arrow {
+  border-bottom: 9px solid #5898f1; }
 
 /* line 1, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_share_links.scss */
 .share-links {

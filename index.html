@@ -412,43 +412,65 @@
 <br>
 
 <div class="navbar-wagon">
-  <div class="container-fluid navbar-wagon-container">
+  <div class="navbar-wagon-container">
 
-<a href="/">      <img class="navbar-wagon-logo" src="images/lewagon.png" />
-</a>
-    <div class="navbar-wagon-pusher"></div>
-
-    <form action="" class="navbar-wagon-search hidden-xs hidden-sm">
-      <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
-      <button type="submit" class="navbar-wagon-search-btn">
-        <i class="fa fa-search"></i>
-      </button>
-    </form>
-    <hr class="hidden-xs hidden-sm">
-    <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
-    <hr>
-    <a href="" class="navbar-wagon-item navbar-wagon-link">
-      <div class="badge-container">
-        <i class="fa fa-envelope-o"></i>
-        <div class="badge badge-blue">3</div>
-      </div>
+    <!-- Logo -->
+    <a href="/" class="navbar-wagon-brand">
+      <img src="images/lewagon.png" />
     </a>
-    <hr>
-    <div class="navbar-wagon-item">
+
+    <!-- Right Navigation -->
+    <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+      <!-- Search form -->
+      <form action="" class="navbar-wagon-search">
+        <input type="text" class="navbar-wagon-search-input" placeholder="Search something">
+        <button type="submit" class="navbar-wagon-search-btn">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+
+      <!-- Text link -->
+      <a href="" class="navbar-wagon-item navbar-wagon-link">Contact</a>
+
+      <!-- Text link -->
+      <a href="" class="navbar-wagon-item navbar-wagon-link">Team</a>
+
+      <!-- Notification link-->
+      <a href="" class="navbar-wagon-item navbar-wagon-link">
+        <div class="badge-container">
+          <i class="fa fa-envelope-o"></i>
+          <div class="badge badge-blue">3</div>
+        </div>
+      </a>
+
+      <!-- Profile picture and dropdown -->
+      <div class="navbar-wagon-item">
+        <div class="dropdown">
+          <img src="http://placehold.it/50x50" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Button (call-to-action) -->
+      <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
+    </div>
+
+    <!-- Dropdown appearing on mobile only -->
+    <div class="navbar-wagon-item hidden-md hidden-lg">
       <div class="dropdown">
-
-        <img src="images/papillard.jpeg" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
-
+        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Log Out</a></li>
+          <li><a href="#">Some mobile link</a></li>
+          <li><a href="#">Other one</a></li>
+          <li><a href="#">Other one</a></li>
         </ul>
-
       </div>
     </div>
-    <hr>
-    <a href="" class="navbar-wagon-item navbar-wagon-button btn">Post stuff</a>
 
   </div>
 </div>
@@ -457,59 +479,66 @@
 <p><strong>Notice</strong>: change class to <code>"navbar-wagon navbar-wagon-fixed"</code> if you want a fixed-top navbar.</p>
 
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-container container-fluid "</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-container"</span><span class="nt">&gt;</span>
 
     <span class="c">&lt;!-- Logo --&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"logo.png"</span> <span class="na">class=</span><span class="s">"navbar-wagon-logo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">class=</span><span class="s">"navbar-wagon-brand"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/lewagon.png"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
 
-    <span class="c">&lt;!-- Pushing navigation content on the right --&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-pusher"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="c">&lt;!-- Right Navigation --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-right hidden-xs hidden-sm"</span><span class="nt">&gt;</span>
 
-    <span class="c">&lt;!-- Search form --&gt;</span>
-    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-search hidden-xs hidden-sm"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-input"</span> <span class="na">placeholder=</span><span class="s">"Search something"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-btn"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span>
-      <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/form&gt;</span>
-    <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"hidden-xs hidden-sm"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Search form --&gt;</span>
+      <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-search"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-input"</span> <span class="na">placeholder=</span><span class="s">"Search something"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"navbar-wagon-search-btn"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-search"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/form&gt;</span>
 
-    <span class="c">&lt;!-- Text link --&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
+      <span class="c">&lt;!-- Text link --&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;</span>
 
-    <span class="c">&lt;!-- Vertical separator --&gt;</span>
-    <span class="nt">&lt;hr&gt;</span>
+      <span class="c">&lt;!-- Text link --&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link"</span><span class="nt">&gt;</span>Team<span class="nt">&lt;/a&gt;</span>
 
-    <span class="c">&lt;!-- Link with icon --&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-badge-container"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"icon-badge icon-badge-blue"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+      <span class="c">&lt;!-- Notification link--&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-link"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"badge-container"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-envelope-o"</span><span class="nt">&gt;&lt;/i&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"badge badge-blue"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+
+      <span class="c">&lt;!-- Profile picture and dropdown --&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-item"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://placehold.it/50x50"</span> <span class="na">class=</span><span class="s">"avatar dropdown-toggle"</span> <span class="na">id=</span><span class="s">"navbar-wagon-menu"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dashboard<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Log Out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/a&gt;</span>
 
-    <span class="c">&lt;!-- Vertical separator --&gt;</span>
-    <span class="nt">&lt;hr&gt;</span>
+      <span class="c">&lt;!-- Button (call-to-action) --&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-button btn"</span><span class="nt">&gt;</span>Post stuff<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
 
-    <span class="c">&lt;!-- Link with profile pic and dropdown --&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-item"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Dropdown appearing on mobile only --&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-wagon-item hidden-md hidden-lg"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"user.jpg"</span> <span class="na">class=</span><span class="s">"avatar dropdown-toggle"</span> <span class="na">id=</span><span class="s">"navbar-wagon-menu"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-bars dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span><span class="nt">&gt;&lt;/i&gt;</span>
         <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Profile<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Dashboard<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
-          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Log Out<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Some mobile link<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Other one<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Other one<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
         <span class="nt">&lt;/ul&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
-    <span class="c">&lt;!-- Vertical separator --&gt;</span>
-    <span class="nt">&lt;hr&gt;</span>
-
-    <span class="c">&lt;!-- Link with button design(call-to-action) --&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">""</span> <span class="na">class=</span><span class="s">"navbar-wagon-item navbar-wagon-button btn"</span><span class="nt">&gt;</span>Post stuff<span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </code></pre>

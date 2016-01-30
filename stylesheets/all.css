@@ -9882,7 +9882,7 @@ button.close {
   background: white;
   transition: all 0.3s ease; }
 
-/* Optional class to fix navbar on top */
+/* Optional class to fix the navbar on top */
 /* line 10, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-fixed {
   position: fixed;
@@ -9891,52 +9891,47 @@ button.close {
   z-index: 1;
   width: 100%; }
 
-/* Navbar vertical separators */
+/* Navbar container (main flexbox)*/
 /* line 19, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
-.navbar-wagon hr {
-  height: 12px;
-  width: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
-  margin-left: 10px;
-  margin-right: 10px; }
-
-/* Navbar container */
-/* line 28, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-container {
   display: flex;
   height: 70px;
-  align-items: center; }
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between; }
 
 /* Navbar logo */
-/* line 35, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
-.navbar-wagon-logo {
+/* line 28, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+.navbar-wagon-brand img {
   width: 50px; }
 
-/* Item pushing right navigation */
-/* line 40, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
-.navbar-wagon-pusher {
-  flex: 1 1 auto; }
+/* Navbar right section (with form, links, button) */
+/* line 33, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+.navbar-wagon-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 /* Navbar item */
-/* line 45, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 40, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-item {
   flex: 0 1 auto;
   cursor: pointer;
-  padding: 0 10px; }
+  padding: 0 20px; }
 
 /* Navbar standard link */
-/* line 52, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 47, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-link {
   color: #616668;
   font-size: 14px; }
 
-/* line 56, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
-.navbar-wagon:hover {
+/* line 51, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+.navbar-wagon-link:hover {
   color: #da552f;
   text-decoration: none; }
 
 /* Navbar right button */
-/* line 62, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 57, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-button {
   margin-left: 10px;
   padding: 0 20px;
@@ -9947,14 +9942,14 @@ button.close {
   font-size: 14px;
   border: 2px solid #D23333; }
 
-/* line 72, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 67, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-button:hover {
   color: white;
   background: #D23333;
   border-color: #ac2626; }
 
 /* Navbar search form */
-/* line 79, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 74, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-search {
   flex: 0 1 300px;
   display: flex;
@@ -9962,7 +9957,7 @@ button.close {
   padding: 0 10px;
   position: relative; }
 
-/* line 86, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 81, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-search-btn {
   line-height: 40px;
   color: #E6E6E6;
@@ -9973,7 +9968,7 @@ button.close {
   top: -2px;
   z-index: 1; }
 
-/* line 96, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 91, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-search-input {
   flex: 0 1 300px;
   transition: all 0.15s ease;
@@ -9986,18 +9981,18 @@ button.close {
   font-size: 14px;
   outline: none; }
 
-/* line 108, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 103, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-search-input:focus {
   border: 1px solid #CCCCCC; }
 
 /* Navbar dropdown menu */
-/* line 113, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 108, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
   border-color: #E6E6E6; }
 
-/* line 118, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 113, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
@@ -10006,12 +10001,12 @@ button.close {
   line-height: 22px !important;
   padding: 10px 20px; }
 
-/* line 126, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 121, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-dropdown-menu li > a:hover {
   background: transparent !important;
   color: black !important; }
 
-/* line 130, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
+/* line 125, /Users/boris/code/lewagon/ui-components/source/stylesheets/components/_navbar.scss */
 .navbar-wagon-dropdown-menu:before {
   content: ' ';
   height: 10px;
